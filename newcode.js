@@ -149,4 +149,96 @@ return change;
 }
 changecalculator(400,356);
 
-/*  var randomnumber=Math.random(); - by this you get random number */
+/*  var randomnumber=Math.random(); - by this you get random number from 0 to 1 */
+
+/* Task: create a function where you'll wrie your name, your job and function will tell you how much is your success likelyhood
+  */
+
+function successscorecalculator () {
+
+prompt("what is your name");
+prompt ("What is your ocupation?");
+var successscore=Math.random();
+successscore=Math.floor ( (successscore * 100) +1);
+
+return ("your success likelyhood is" + " " + successscore + "%");
+}
+
+successscorecalculator();
+
+
+/* Conditional statements */
+
+/*Write a function which returns random number, that is success likelihood, and you return different alerts based on the number*/
+
+function successscorecalculator() {
+
+prompt ("What is your name?")
+prompt ("What is your ocupation?");
+var successlikelihood=Math.random();
+successlikelihood=Math.floor ((successlikelihood * 100) +1);
+console.log(successlikelihood);
+
+if (successlikelihood>75) {
+alert ("congratulations, your successlikelihood is" + " " + successlikelihood + "%")
+} if (successlikelihood<=75 && successlikelihood>=40) {
+  alert ("your successlikelihood is" + " " + successlikelihood + "%" + "," + " " + "it's not good but don't give up!")
+}else {
+  alert ("unfortunately, you won't become successful");
+}
+
+}
+
+ successscorecalculator();
+
+function
+
+ === // equals
+ !== // not equals
+ > // more
+ < // less
+ >= /* equals or more */
+ <= // equals or less
+ = //
+
+ && // AND
+ !! // OR
+ ! // NOT
+
+
+ /*Task: create BMI calculator, if index is below 18.5 alert underweight, if it's if between 18.5 and 24.9 good, if above 25 it's overweight */
+
+ function BMIcalculator (weight,height) {
+
+ var BMIindex= (weight/ (height*height));
+
+if (BMIindex<18.5) {
+return ("Your BMI indext is" + " " + BMIindex + "," + " " + "which means you're underweight");
+}if (BMIindex>=18.5 && BMIindex<=24.9) {
+  return ("Your BMI indext is" + " " + BMIindex + "," + " " + "which means you have ideal weight");
+}if (BMIindex>24.9) {
+  return ("Your BMI indext is" + " " + BMIindex + "," + " " + "which means you are overweight");
+}
+
+ }
+
+ BMIcalculator (88, 1.89)
+}
+
+var employees=["Nick", "Max","Gustavo"];
+
+employees.includes("Adriana"); // checking if array includes specificic value, e.i. employee in this case.
+
+function guestchecker() {  // checks if guest is in the list using Array
+
+var guestname=prompt ("What's your name?");
+var guestlist=["Max", "Nick"];
+
+if (guestlist.includes(guestname)) {
+    return ("welcome")
+}else {
+    return ("Sorry,you're not in guestlist")
+}
+
+}
+guestchecker();
