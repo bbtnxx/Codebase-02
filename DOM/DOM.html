@@ -5,14 +5,47 @@
   <head>
     <meta charset="utf-8">
     <title>My website</title>
-    <link rel="stylesheet" href="C:\my docs\Dropbox\Programming\Codebase-02\Document Object Model\styles.css">
+  <link rel="stylesheet" href="C:\my docs\Dropbox\Programming\Codebase-02\DOM\styles.css">
   </head>
 
 
-
   <body>
+<h1>Hello world</h1>
 
+ <input type="checkbox">
+ <button style=":active: color:red;">Click Me</button>
+
+<ul>
+  <li class="list">
+    <a href="https://google.com">Google</a>
+  </li>
+  <li class="list">Second</li>
+  <li class="list">Third</li>
+</ul>
+
+
+
+<script src="C:\my docs\Dropbox\Programming\Codebase-02\DOM\DOM.js" charset="utf-8"></script>
   </body>
 
 
 </html>
+
+
+<!-- every object has a property and method. properties are qualities of the object (for example, H1 is an object and it's properties are background color,
+color and heading content and etc. on the other hand, methods are the things object can do)
+with properties you can:
+1. get property (find out what's the content of button) - document.querySelector("H1").innerHTML; - this way you'll see what's h1.
+2. set property (set the content of h1)   document.querySelector("H1").innerHTML= "Hello world"; - this way you'll set new value of h1
+with methods you can:
+1. click();  e.g. - document.queryselector("button").click();  - you'll click to this button
+2.appendChild()
+3.setAttribute();
+difference between functions and methods: method is assigned to object, so it's what object can do while functions are indipendent.
+  -->
+
+  <!--
+so main thing is to find an desirable object for which there are multiple ways:
+1. document.firstelementchild.lastelementchild. ... this way you can find but it's hard
+2. document.querySelector("H1").innerHTML= "Hello world"; - this way you can also find 
+ -->
