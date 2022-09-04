@@ -242,3 +242,32 @@ if (guestlist.includes(guestname)) {
 
 }
 guestchecker();
+
+/* calculator */
+
+function add (num1,num2) {
+return num1+num2;
+}
+add (5,6);
+
+
+function multiply (num1,num2) {
+  return num1*num2;
+}
+multiply (17,23);
+
+function devide (num1,num2) {
+  return num1/num2;
+}
+devide (19,3);
+
+function minus (num1,num2) {
+  return num1-num2;
+}
+minus (23,9);
+
+function calculator (num1,num2,operator) {
+return operator (num1,num2)
+}
+calculator (num1,num2, devide);
+// operator is a function. so you input numbers and operator, e.i 1 function out of 4 (add,multiply,devide,minus);
