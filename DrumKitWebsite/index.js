@@ -13,7 +13,8 @@ var numberofdrumbuttons = document.querySelectorAll (".drum").length; // create 
 for (var i=0; i<numberofdrumbuttons; i++) { // create var loop, 1. which is zero 2. which is less then length of .drum class 3. which is icreased by 1 after every loop but does not exceed number of drumbuttons
 document. querySelectorAll (".drum") [i].addEventListener ("click", function () {
 
-
+  var audio = new Audio("sounds/tom-1.mp3");
+  audio.play();
 
 });
 }  // in this solution we use unanymous function.
@@ -21,6 +22,3 @@ document. querySelectorAll (".drum") [i].addEventListener ("click", function () 
 
 //  var audio = new Audio('sounds/tom-1.mp3');
 //  audio.play();
-
-
-alert ("hello world")
