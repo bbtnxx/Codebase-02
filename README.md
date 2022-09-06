@@ -1,5 +1,7 @@
 # Codebase-02
 
+*Readme.md is updated daily
+
 This repo will contain my code written while being on the bench
 
 at this moment it contains the work done by me since the 30th of August:
