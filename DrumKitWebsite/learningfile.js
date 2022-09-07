@@ -47,3 +47,23 @@ function CodeEngineer (name,experience,jobtitle, ) {
 var Engineer3 = new CodeEngineer ("giorgi", 4, "dev");  // after this code, you'll create an object who comes with this function, so he already can execute his work.
 
 Engineer3.code ();
+
+
+    // functions/higher order functions/callbacks
+
+function Sayhi (name) {
+  console.log ("Hello," + name);
+};
+
+Sayhi("Tom");
+
+// calback
+
+$0.addEventListener("click", function (e) {
+console.log (e);
+});   // with this, system will log click event,
+
+// you add event listener to entire interface, if someone clicks a keyboard, logging function gets triggered and logs event itself:
+document.addEventListener ("keydown", function (event) {
+ console.log(event);
+});

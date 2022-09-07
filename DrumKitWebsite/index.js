@@ -72,8 +72,8 @@ switch (buttonInnerHTML) {
 });
 }  // in this solution we use unanymous function./
 
+//         adding keyboard press listeners to buttons 
 
-/*
-var audio = new Audio("sounds/tom-1.mp3");
-audio.play();
-*/
+document.addEventListener("keydown", function () {
+  alert ("Key was pressed");
+});
