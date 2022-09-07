@@ -2,9 +2,7 @@
 
 *Readme.md is updated at least once in a two days.
 
-Thiis repo will contain my code written while being on the bench
-
-This repo will contain my code written while being on the bench
+This repository is created to push my code written while being on the bench
 
 at this moment it contains the work done by me since the 30th of August:
 - JS functions with and without conditional statements
