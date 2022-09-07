@@ -1,6 +1,8 @@
 # Codebase-02
 
-*Readme.md is updated on a daily basis.
+*Readme.md is updated at least once in a two days.
+
+Thiis repo will contain my code written while being on the bench
 
 This repo will contain my code written while being on the bench
 
