@@ -38,8 +38,7 @@ var Engineer1 = new AddEngineer (9,"Sasha", "Exadel");
 
 
 
-
-
+var job="zazmic";
 
 
 
