@@ -12,68 +12,68 @@ in this solution we use Named Function, which means function is indipendently re
 
 
 
-                                     // addEventListener to every button solution
+// addEventListener to every button solution
 
-var numberofdrumbuttons = document.querySelectorAll (".drum").length; // create a var which is a lenght of an object
-for (var i=0; i<numberofdrumbuttons; i++) { // create var loop, 1. which is zero 2. which is less then length of .drum class 3. which is icreased by 1 after every loop but does not exceed number of drumbuttons
-document. querySelectorAll (".drum") [i].addEventListener ("click", function () {
+var numberofdrumbuttons = document.querySelectorAll(".drum").length; // create a var which is a lenght of an object
+for (var i = 0; i < numberofdrumbuttons; i++) { // create var loop, 1. which is zero 2. which is less then length of .drum class 3. which is icreased by 1 after every loop but does not exceed number of drumbuttons
+  document.querySelectorAll(".drum")[i].addEventListener("click", function() {
 
-/* use switch:
+    /* use switch:
 
- switch (expression) {    // here you write one common property which you want to switch
-  case expression:   // here you write this propery
-                    // here you write code for playing sound
-    break;
-  default:
+     switch (expression) {    // here you write one common property which you want to switch
+      case expression:   // here you write this propery
+                        // here you write code for playing sound
+        break;
+      default:
 
-} */
+    } */
 
-var buttonInnerHTML= this.innerHTML;
+    var buttonInnerHTML = this.innerHTML;
 
-switch (buttonInnerHTML) {
-  case "w":
-  var tom1 = new Audio("sounds/tom-1.mp3");
-  tom1.play();
-    break;
-
-    case "a":
-    var tom2 = new Audio("sounds/tom-2.mp3");
-    tom2.play();
-      break;
-
-      case "s":
-      var tom3 = new Audio("sounds/tom-3.mp3");
-      tom3.play();
+    switch (buttonInnerHTML) {
+      case "w":
+        var tom1 = new Audio("sounds/tom-1.mp3");
+        tom1.play();
         break;
 
-        case "d":
+      case "a":
+        var tom2 = new Audio("sounds/tom-2.mp3");
+        tom2.play();
+        break;
+
+      case "s":
+        var tom3 = new Audio("sounds/tom-3.mp3");
+        tom3.play();
+        break;
+
+      case "d":
         var tom4 = new Audio("sounds/tom-4.mp3");
         tom4.play();
-          break;
+        break;
 
-          case "j":
-          var snare = new Audio("sounds/snare.mp3");
-          snare.play();
-            break;
+      case "j":
+        var snare = new Audio("sounds/snare.mp3");
+        snare.play();
+        break;
 
-            case "k":
-            var crash = new Audio("sounds/crash.mp3");
-            crash.play();
-              break;
+      case "k":
+        var crash = new Audio("sounds/crash.mp3");
+        crash.play();
+        break;
 
-              case "l":
-              var kick = new Audio("sounds/kick-bass.mp3");
-              kick.play();
-                break;
+      case "l":
+        var kick = new Audio("sounds/kick-bass.mp3");
+        kick.play();
+        break;
 
-                default:
-}
+      default:
+    }
 
-});
-}  // in this solution we use unanymous function./
+  });
+} // in this solution we use unanymous function./
 
-//         adding keyboard press listeners to buttons 
+//         adding keyboard press listeners to buttons
 
-document.addEventListener("keydown", function () {
-  alert ("Key was pressed");
+document.addEventListener("keydown", function() {
+  alert("Key was pressed");
 });

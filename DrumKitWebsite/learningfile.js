@@ -67,3 +67,9 @@ console.log (e);
 document.addEventListener ("keydown", function (event) {
  console.log(event);
 });
+
+
+//
+document.querySelector (".w").addEventListener("click", function () {
+document.querySelector(".w").style.color="white";
+});
