@@ -19,8 +19,11 @@ console.log $("h1").css ("color");
 
 // You can 1. create a style in advance 2. write an event, so if this happens, assign this style to this object.
 $("h1").addClass ("bigtitle");
-
 $("h1").addClass ("bigtitle margin-50"); // you can assign to classes to a n object at time. bigtittle and margin-50 are different classes.
+document.querySelector ("h1").addEventListener("click", function () {
+    $("h1").addClass("bigtitle");
+});
+
 
 // you can manipulate object's text with JQuery
 
@@ -84,3 +87,16 @@ $("button").click(function () {
 $("button").click(function () {
   $("h1").slideDown ();
 }) ; //
+
+
+                      // SUM-UP
+$("object").action ("param");
+
+// main methods
+$("h1").text("calm down"); // text parameter changes text into an object
+$("h1").css ("color", "red"); // css parameter changes style
+$("h1").addClass ("bigtitle"); // adds class to an object on the fly
+$("h1").attr("src", "images/example.png") // attributes are source, href and etc. you change them on the fly.
+$("h1").hide (); //
+$("h1").fadeOut)();
+$("h1").slideDown(); 
