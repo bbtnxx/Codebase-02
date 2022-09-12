@@ -73,3 +73,6 @@ document.addEventListener ("keydown", function (event) {
 document.querySelector (".w").addEventListener("click", function () {
 document.querySelector(".w").style.color="white";
 });
+
+
+// JS callback function s
