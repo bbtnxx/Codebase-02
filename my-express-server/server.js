@@ -20,6 +20,6 @@ app.get ("/about", function (request, response){
 });
 
 
-app.listen (8080, function () {
-  console.log("server started on port 8080");
+app.listen (3000, function () {
+  console.log("server started on port 3000");
 }); // app.listen (8080) - this way you set app to listen 8080 port. then you add callback function just to know when server has started
