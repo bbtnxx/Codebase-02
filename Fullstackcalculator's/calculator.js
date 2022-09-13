@@ -5,6 +5,8 @@ const bodyParser = require ("body-parser"); // without this package, we can't pa
 const app = express(); // this way you start using a package in a project
 app.use (bodyParser.urlencoded({extended: true})); // body-parser works with express so there's no need to create from scratch
 
+// SIMPLE CALCULATOR
+
 app. get ("/", function (request,response) {
 response.sendFile(__dirname + "/index.html");
 }); // instead of a string like below, here we send a html file. now we want to write post endpoint
@@ -24,7 +26,7 @@ response.send ("the result of the calculation is" + " " + result);
 });
 
 
-// BMI calculator
+// BMI CALCULATOR
 
 app. get ("/bmicalculator", function (request,response) {
 response.sendFile(__dirname + "/bmicalculator.html");
