@@ -19,4 +19,9 @@ https://api.openweathermap.org/data/2.5/weather?q=London&units=metric&appid=0ec6
 jokeapi example:
 https://sv443.net/jokeapi/v2/#try-it
 
+// search for api documentations
+
+1. make get request to external server node // you'll get a general info
+2. https get node // after you find perferct match, you can 
+
 */
