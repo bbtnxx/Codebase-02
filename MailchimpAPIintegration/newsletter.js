@@ -38,6 +38,10 @@ const jsonData = JSON.stringify(data);  // this is  finished version of data tha
 
 });
 
+api. post ("/failure", function (req, res) {
+  res.redirect ("/");
+});
+
 //                POST THIS DATA TO MAILCHIMP API
 
 // 1. generate API key from the mailchimp user account
@@ -50,13 +54,13 @@ method: "POST",
 auth: "max:6bd66e9acb70b24d950c5dae8f7416c7-us11",
 };
 
-const request = https.request (url, options, function (response) {
+const requests = https.request (url, options, function (response) {
 
 if (response.statusCode === 200) {
-  res.send ("successfully subscribed");
+  res.sendFile (__dirname + "/success.html");
 }else {
-  res.send ("error with signing up. please try again");
-}
+  res.sendFile (__dirname + "/failure.html");
+};
 
 
 response.on ("data", function (data) {
@@ -64,8 +68,8 @@ response.on ("data", function (data) {
 });
 });
 
-request.write (jsonData);
-request.write (end);
+requests.write (jsonData);
+requests.write (end);
 
 // // 6bd66e9acb70b24d950c5dae8f7416c7-us11
 // // dc17d5e518.
@@ -74,6 +78,6 @@ request.write (end);
 
 
 
-api.listen (8085, function () {
-  console.log("server started on port 8085");
+api.listen (process.env.PORT || 8084, function () {
+  console.log("server started");
 });
